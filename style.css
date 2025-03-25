@@ -1,15 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;}
 
     body {
-    background: linear-gradient(180deg, #FF9BF8 0%, #C08CFF 48%, #FF98F8 100%);}
+    background: linear-gradient(180deg, #FF9BF8 0%, #C08CFF 48%, #FF98F8 100%);
+    font-family: Arial, Helvetica, sans-serif;}
 
     header {
         width: 100%;
-        height: 100%;
-        align-items: left;
-        
+        height: 60px;
+        align-items: center;
+        display: flex;
         background: #570077;
         box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);}
+
+    .geretech {
+        font-family: 'Righteous';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 24px;
+        display: flex;
+        text-align: center;
+        letter-spacing: 0.5px;
+
+        color: #FF3AA7;
+
+text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);}
+
+    .txtnavbar {
+        font-family: 'Righteous';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.5px;
+        color: #FF3AA7;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);}
+
+    section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;}
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-family: 'Righteous';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 60px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        letter-spacing: 0.5px;
+        color: #FF3AA7;
+        text-shadow: 4px 6px 10px rgba(0, 0, 0, 0.5);}
