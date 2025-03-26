@@ -20,26 +20,18 @@
     .geretech {
         font-family: 'Righteous';
         font-style: normal;
-        font-weight: 400;
         font-size: 40px;
-        line-height: 24px;
         display: flex;
         text-align: center;
-        letter-spacing: 0.5px;
-
+        padding: 20px;
         color: #FF3AA7;
-
-text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);}
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);}
 
     .txtnavbar {
         font-family: 'Righteous';
         font-style: normal;
-        font-weight: 400;
         font-size: 25px;
-        line-height: 24px;
         display: flex;
-        align-items: center;
-        letter-spacing: 0.5px;
         color: #FF3AA7;
         text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);}
 
@@ -53,6 +45,7 @@ text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);}
     .section1 {
         display: flex;
         flex-direction: column;
+        padding-left: 200px;
     }
 
     h1 {
