@@ -1,0 +1,65 @@
+{
+  "name": "GERE TECH",
+  "short_name": "GERE TECH",
+  "description": "Sistema de Gerenciamento Empresarial",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "pt-BR",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "/img/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/img/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "Acesso rápido ao painel principal",
+      "url": "/pages/dashboard.php",
+      "icons": [
+        {
+          "src": "/img/logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Vendas",
+      "short_name": "Vendas",
+      "description": "Gerenciar vendas",
+      "url": "/pages/vendas.php",
+      "icons": [
+        {
+          "src": "/img/logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Produtos",
+      "short_name": "Produtos",
+      "description": "Gerenciar produtos",
+      "url": "/pages/produtos.php",
+      "icons": [
+        {
+          "src": "/img/logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

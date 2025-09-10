@@ -1,0 +1,37 @@
+### MER - GERE TECH  ###
+
+ENTIDADES:
+1. usuarios
+   - id (PK)
+   - nome, email, senha
+
+2. clientes
+   - id (PK)
+   - nome, cpf, telefone, email
+
+3. produtos
+   - id (PK)
+   - nome, descricao, valor, estoque
+
+4. vendas
+   - id (PK)
+   - id_cliente (FK → clientes), id_produto (FK → produtos)
+   - quantidade, forma_pagamento, valor_total, data_venda
+
+5. configuracoes
+   - id (PK)
+   - chave, valor, descricao
+
+6. logs_atividades
+   - id (PK)
+   - id_usuario (FK → usuarios)
+   - acao, tabela_afetada, id_registro, detalhes, data_acao
+
+7. alertas
+   - id (PK)
+   - tipo, titulo, mensagem, lido, data_criacao
+
+RELACIONAMENTOS:
+- usuarios (1) → logs_atividades (N)
+- clientes (1) → vendas (N)
+- produtos (1) → vendas (N)

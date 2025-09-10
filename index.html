@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GERE TECH - Sistema de Gerenciamento</title>
+    <meta name="description" content="Sistema completo de gerenciamento empresarial">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#667eea">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <!-- Header fixo -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">GT</div>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home" data-icon="\f015">Início</a></li>
+                    <li><a href="#about" data-icon="\f05a">Sobre</a></li>
+                    <li><a href="#features" data-icon="\f0ad">Recursos</a></li>
+                    <li><a href="#contact" data-icon="\f0e0">Contato</a></li>
+                    <li><a href="pages/login.php" class="btn btn-primary" data-icon="\f2f6">Acessar Sistema</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Menu mobile -->
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sidebar Mobile -->
+    <div class="index-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">GT</div>
+            <h2 class="sidebar-title">GERE TECH</h2>
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="#home" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span class="nav-text">Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-info-circle"></i>
+                        <span class="nav-text">Sobre</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#features" class="nav-link">
+                        <i class="fas fa-cogs"></i>
+                        <span class="nav-text">Recursos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span class="nav-text">Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <a href="pages/login.php" class="btn">
+                <i class="fas fa-sign-in-alt"></i>
+                Acessar Sistema
+            </a>
+        </div>
+    </div>
+    
+    <!-- Overlay da Sidebar -->
+    <div class="index-sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>GERE TECH</h1>
+            <p>Sistema completo de gerenciamento empresarial</p>
+            <p>Gerencie clientes, produtos, vendas e muito mais de forma simples e eficiente</p>
+            
+            <div class="hero-buttons">
+                <a href="inicializar_sistema.php" class="btn btn-primary">
+                    <i class="fas fa-sign-in-alt"></i> Acessar Sistema
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i> Saiba Mais
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Seção Sobre -->
+        <section id="about" class="section">
+            <h2>Sobre o GERE TECH</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>O GERE TECH é um sistema completo de gerenciamento empresarial desenvolvido para facilitar o controle de clientes, produtos, vendas e relatórios da sua empresa.</p>
+                    
+                    <p>Com uma interface moderna e intuitiva, o sistema oferece todas as ferramentas necessárias para otimizar os processos do seu negócio.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Gestão de Clientes</h3>
+                            <p>Cadastre e gerencie todos os seus clientes de forma organizada</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-box"></i>
+                            <h3>Controle de Produtos</h3>
+                            <p>Mantenha seu estoque sempre atualizado e organizado</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Relatórios de Vendas</h3>
+                            <p>Acompanhe o desempenho das suas vendas com gráficos detalhados</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Responsivo</h3>
+                            <p>Acesse o sistema de qualquer dispositivo, a qualquer hora</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Recursos -->
+        <section id="features" class="section">
+            <h2>Principais Recursos</h2>
+            <div class="dashboard-cards">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Dashboard Completo</h3>
+                        <i class="fas fa-tachometer-alt card-icon"></i>
+                    </div>
+                    <p>Visualize todas as informações importantes do seu negócio em um só lugar</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Gestão de Vendas</h3>
+                        <i class="fas fa-shopping-cart card-icon"></i>
+                    </div>
+                    <p>Registre vendas, controle estoque e acompanhe o faturamento</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Relatórios Avançados</h3>
+                        <i class="fas fa-chart-bar card-icon"></i>
+                    </div>
+                    <p>Gere relatórios detalhados para análise do desempenho</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Segurança</h3>
+                        <i class="fas fa-shield-alt card-icon"></i>
+                    </div>
+                    <p>Sistema seguro com criptografia e controle de acesso</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact" class="section">
+            <h2>Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@geretech.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>São Paulo, SP - Brasil</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-section">
+                    <h3>Pronto para começar?</h3>
+                    <p>Acesse o sistema agora e comece a gerenciar seu negócio de forma mais eficiente!</p>
+                    <a href="/ptcc/inicializar_sistema.php" class="btn btn-primary btn-large">
+                        <i class="fas fa-rocket"></i> Acessar Sistema
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>GERE TECH</h3>
+                <p>Sistema de Gerenciamento Empresarial</p>
+                <p>&copy; 2025 - Desenvolvido pela Equipe GERE TECH</p>
+            </div>
+            
+            <div class="footer-team">
+                <h4>Equipe de Desenvolvimento</h4>
+                <p>TCC - Sistemas de Informação</p>
+                <p>Orientador: Prof. [Nome do Professor]</p>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <div class="footer-links">
+                <a href="/ptcc/manifest.json" target="_blank">Manifesto PWA</a> |
+                <a href="#" onclick="registerServiceWorker()">Registrar Service Worker</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/landing.js"></script>
+    
+    <!-- Script para registrar Service Worker -->
+    <script>
+        function registerServiceWorker() {
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/ptcc/service-worker.js')
+                    .then(registration => {
+                        showNotification('Service Worker registrado com sucesso!', 'success');
+                        console.log('SW registrado:', registration);
+                    })
+                    .catch(error => {
+                        showNotification('Erro ao registrar Service Worker', 'error');
+                        console.log('Erro no SW:', error);
+                    });
+            } else {
+                showNotification('Service Worker não suportado neste navegador', 'warning');
+            }
+        }
+        
+        // Scroll suave já está implementado no landing.js
+    </script>
+    
+
+</body>
+</html>
